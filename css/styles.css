@@ -1,1 +1,276 @@
-/* ini css */
+/* Resetting default margin and padding */
+body, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0; /* Remove default margin */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+    border-top: 1px solid black; /* Border only at the top */
+    border-bottom: 1px solid black; /* Border only at the bottom */
+    border-left: none; /* No border on the left */
+    border-right: none; /* No border on the right */
+    border-radius: 0; /* Remove border radius */
+    position: relative; /* Ensure the header is above other content */
+    z-index: 10; /* Ensure the header is above the background image */
+}
+
+
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+nav {
+    border: 1px solid black; /* Border color for navbar */
+    border-radius: 5px; /* Rounded corners for the border */
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid black; /* Border around each navbar item */
+    border-right: none; /* Remove the right border to connect boxes */
+    border-radius: 0; /* Remove border radius for a seamless connection */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:last-child {
+    border-right: 1px solid black; /* Ensure the last item has a right border */
+}
+
+.navbar a:hover {
+    color: #fff; /* Text color on hover */
+    background-color: black; /* Background color on hover */
+}
+
+/* Styling for main content */
+main {
+    background-color: beige;   
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+ 
+    height: 578px; /* Set the height of the main element */
+    color: white; /* Optional: Set text color to ensure readability against the background */
+    position: relative; /* Ensure proper positioning */
+    overflow: hidden; /* Hide any overflowing content */
+    border-bottom: 1px solid black; /* Border only at the bottom */
+}
+
+
+
+h1 {
+    font-size: 2em;
+    color: #000000; /* Set heading color to white for better contrast */
+    margin-bottom: 10px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+p {
+    margin-left: 100px;
+    font-size: 1.2em;
+    color: #000000; /* Set paragraph color to a lighter shade for better contrast */
+}
+
+/* Styling for sections */
+section {
+    padding: 20px;
+    background-color: #f4f4f4; /* Light grey background for sections */
+    border-bottom: 1px solid black; /* Border at the bottom of each section */
+}
+
+/* General container styling */
+.container {
+    margin-left: 100px; /* Align content to the left with 100px margin */
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #333; /* Darker color for section headings */
+    margin-bottom: 15px;
+}
+
+/* Styling for the "Our Facilities" section */
+#our-facilities {
+    padding: 20px;
+    background-color: #e0f7fa; /* Light blue background for "Our Facilities" */
+    border-bottom: 1px solid black; /* Border at the bottom of the section */
+}
+
+#our-facilities h2 {
+    margin: 0 0 20px 0; /* Remove default margins, add space below title */
+}
+
+.profiles {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping to next line on smaller screens */
+}
+
+.profile-card {
+    text-align: center; /* Center text under the image */
+    margin-left: 50px; /* Reduce space between profile cards */
+}
+
+.profile-foto {
+    width: 200px; /* Size of profile pictures */
+    height: 200px; /* Size of profile pictures */
+    border-radius: 50%; /* Make the images circular */
+    object-fit: cover; /* Cover the image without distortion */
+    border: 2px solid black; /* Optional: border around profile pictures */
+}
+
+.profile-card p {
+    margin: 5px 0 0; /* Margin top to ensure text is below image, no margin bottom */
+    font-size: 1em; /* Font size for text */
+    color: #333; /* Dark color for text */
+}
+
+
+
+/* Styling for the "Message Us" section */
+#message-us {
+    padding: 20px;
+    background-color: #f1f8e9; /* Light green background for "Message Us" */
+    border-bottom: 1px solid black; /* Border at the bottom of the section */
+    display: flex;
+    align-items: flex-start; /* Align items to the start (top) of the section */
+}
+
+#message-us .container {
+    max-width: 500px; /* Set max width for the container */
+    width: 100%; /* Ensure container uses full width */
+    display: flex;
+    gap: 20px; /* Space between form and result box */
+}
+
+#message-us h2 {
+    margin: 0 0 20px 0; /* Remove default margins, add space below title */
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Allow the form to take up remaining space */
+}
+
+#contact-form label {
+    margin-bottom: 5px; /* Space below the label */
+    font-weight: bold; /* Make label text bold */
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+    margin-bottom: 15px; /* Space below each input field */
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Light grey border for input fields */
+    border-radius: 4px; /* Slightly rounded corners */
+}
+
+#contact-form button {
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Slightly rounded corners */
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+#contact-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styling for the radio buttons */
+fieldset {
+    border: none; /* Remove default border */
+    padding: 0; /* Remove padding */
+    margin-bottom: 15px; /* Space below the fieldset */
+}
+
+legend {
+    font-weight: bold; /* Make legend text bold */
+    margin-bottom: 10px; /* Space below the legend */
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: row; /* Align radio buttons horizontally */
+    gap: 15px; /* Space between radio buttons */
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center; /* Align radio button and text vertically */
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px; /* Space between radio button and text */
+}
+
+/* Styling for the result box */
+#result-box {
+    border: 1px solid #ccc; /* Light grey border around result box */
+    border-radius: 4px; /* Slightly rounded corners */
+    padding: 20px; /* Padding inside the box */
+    background-color: #ffffff; /* White background for result box */
+    flex: 1; /* Allow the result box to take up remaining space */
+    min-width: 300px; /* Minimum width for result box */
+}
+
+
+/* General styles for the footer */
+footer {
+    text-align: right; /* Center align text */
+    padding: 10px 0; /* Padding above and below the text */
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Full width */
+    border-bottom: 1px solid black;
+    color: rgb(248, 248, 248); /* White text color */
+}
+
+footer p {
+    
+    margin-right: 100px; /* Remove default margin */
+    font-size: 30px; /* Font size for footer text */
+}
+
+
+/* Make sure these sections also have the margin-left */
+#our-facilities .container,
+#message-us .container {
+    margin-left: 100px; /* Align content to the left with 100px margin */
+}
