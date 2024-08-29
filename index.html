@@ -6,7 +6,87 @@
     <title>Document</title>
     <link rel="stylesheet" href="css\styles.css">    
 </head>
+
+
 <body>
+    <header>
+        <div class="profile-container">
+            <img src="https://cdn.medcom.id/dynamic/content/2021/02/10/1241449/Djg7zh9fbB.jpg?w=700" alt="Profile Photo" class="profile-photo">
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#our-profile">Our Profile</a></li>
+                <li><a href="#achievement">Achievement</a></li>
+                <li><a href="#message-us">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Hi Fahrezi, Welcome to The Website</h1>
+        <p>Ini adalah latihan website pertama</p>
+    </main>
+    <section id="our-facilities">
+        <div class="container">
+            <h2>Our Facilitation</h2>
+            <div class="profiles">
+                <div class="profile-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvwRl-M7GP8IvBLdb_K8CiAccwH29OnGdhpA&s" alt="Profile Picture 1" class="profile-foto">
+                    <p> Professional <br> Teacher</p>
+                </div>
+                <div class="profile-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT660bjqS9ZqCRdUID2x8_ZQgTIDqgtqju-rg&s" alt="Profile Picture 2" class="profile-foto">
+                    <p>Sport Field</p>
+                </div>
+                <div class="profile-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9WS2qu-xhBPC1jnfM3aejusgJM3RjzJsgLg&s" alt="Profile Picture 3" class="profile-foto">
+                    <p>Classroom</p>
+                </div>
+            </div>
+        </div>
+    </section>
     
+    <section id="message-us">
+        <div class="container">
+            <h2>Message Us</h2>
+            <form id="contact-form">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="dob">Tanggal Lahir:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <fieldset>
+                    <legend>Jenis Kelamin:</legend>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            Laki-laki
+                        </label>
+                        <label>
+                            <input type="radio" id="female" name="gender" value="female" required>
+                            Perempuan
+                        </label>
+                    </div>
+                </fieldset>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div id="form-message"></div> <!-- For displaying messages -->
+            <div id="result-box"></div> <!-- For displaying form results -->
+        </div>
+    </section>
+    
+    <footer>
+        <p>Created by Fahrezi</p>
+    </footer>
+    
+    <script src="script.js"></script> <!-- Link to JavaScript file -->
 </body>
+</body>
+
 </html>
+
